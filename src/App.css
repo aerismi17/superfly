@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+.header{
+  height: 20%;
+  background-color: #111111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  color: white; 
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 0.6rem;
+  letter-spacing: 2.5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header a{
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.weather{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#city{
+  font-family: 'Nunito Sans', sans-serif;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 0.6rem;
+  font-weight: normal;
+  padding-top: 0px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+
+.logo{
+  height: 2.5rem;
+  width: 5rem;
+  margin-right: 30px; 
+  background: url(./img/locomotion.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main{
+  width: 100%;
+  padding:0;
+  margin:0;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: url('https://cdn.dribbble.com/users/1208648/screenshots/14568958/media/38b668ffb29f1d4ad64e8a49d7d47308.gif');
+  background-size: cover;
+}
+
+.tagline{
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 0.7rem;
   color: white;
+  letter-spacing: 1.5px;
+  margin-top: 0px;
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
+.brand{
+  font-family: 'Bangers', sans-serif;
+  color: white;
+  letter-spacing: 15px;
+  font-size: 8.5rem;
+  margin-bottom: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.playNowButton{
+  display: block;
+  padding: 15px 75px;
+  font-size: 11px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #03111E;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color:rgb(255, 255, 0);
+  text-align: center;
+  font-weight: bolder;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.playNowButton::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left: -100px;
+  width: 70%;
+  height: 100%;
+  background:rgb(255, 255, 135);
+  opacity: 0.5;
+  transition: 0.5s;
+  transform: skewX(-15deg);
+}
+
+.playNowButton:hover::before{
+  left: 210px;
+}
+
+.playNowButton::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -70px;
+  width: 50px;
+  height: 100%;
+  background: rgb(255, 255, 130);
+  transition: 0.8s;
+  transform: skewX(-15deg);
+  transition-delay: 0.3s;
+}
+
+.playNowButton:hover::after{
+  left: 210px;
+}
+
+.container{
+  border: 1px solid white;
+  padding: 6px;
 }
