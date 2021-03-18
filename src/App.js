@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className= "App">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers|Nunito+Sans"></link>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers|Nunito+Sans:wght@200;300;400;600;700;800;900"></link>
       <div className = 'header'>
         <div className = 'links'>
           <div className = 'logo'/>
@@ -58,6 +58,19 @@ function App() {
         </div>
       </div>
 
+      <div className = 'aboutTheGame'>
+        <div className = 'descrip'>
+          <header className = 'about'>about the game</header>
+          <header className = 'summaryTag'>DEFY THE LIMITS</header>
+          <p className = 'summary'>
+            Superfly is an open-world action sandbox game where you play as a superhero who can switch between six different movement modes. Discover new forms of locomotion as you experiment with pairs of movement modes and explore the city any way you would like. Use each mode’s unique abilities to fight the army of robots invading the city.
+          </p>
+        </div>
+        <div className = 'trailer'>
+          <iframe id = 'superflytrailer' title = 'superflytrailer' 
+            width="560" height="315" src="https://www.youtube.com/embed/Kc-hB9E0UF8" frameborder = '0' />
+        </div>
+      </div>
     </div>
   );
 }
